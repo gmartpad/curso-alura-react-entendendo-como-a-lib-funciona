@@ -6,15 +6,14 @@ class ListaDeNotas extends React.Component {
     render(){
         return(
             <ul>
-                <li>
-                    <CardNota/>
-                </li>
-                <li>
-                    <CardNota/>            
-                </li>
-                <li>
-                    <CardNota/>
-                </li>
+                {
+                    Array.of("Trabalho", "Trabalho", "Estudos").map((i, k) => 
+                        <li key={k}>
+                            <h2>{i.valueOf}</h2>
+                            <CardNota/>
+                        </li>
+                    )
+                }
             </ul>
         )
     }
