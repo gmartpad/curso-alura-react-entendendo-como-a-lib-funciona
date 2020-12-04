@@ -1,0 +1,16 @@
+.lista{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-da-lista{
+    list-style-type: none;
+    /* margin-bottom: -20px; */
+    border: 1px solid black;
+}
+/* 
+
+*{
+    border: 1px solid red;
+} */
