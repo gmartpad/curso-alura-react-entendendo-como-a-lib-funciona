@@ -22,7 +22,7 @@ class FormularioCadastro extends React.Component {
         <input 
           type='text' 
           placeholder='Título'
-          onChange={this.handleMudancaTitulo}
+          onChange={this.handleMudancaTitulo.bind(this)}
         />
         <textarea 
           placeholder='Escreva sua nota' 
