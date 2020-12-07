@@ -6,10 +6,15 @@ import FormularioCadastro from './components/FormularioCadastro/index'
 import './assets/App.css'
 
 class App extends React.Component {
+
+  criarNota(titulo, texto) {
+    console.log(`${titulo} - ${texto}`);
+  }
+
   render(){
     return (
       <section>
-        <FormularioCadastro/>
+        <FormularioCadastro criarNota={this.criarNota} />
         <ListaDeNotas/>
       </section>
     );
