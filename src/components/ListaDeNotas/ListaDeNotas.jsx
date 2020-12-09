@@ -5,11 +5,12 @@ import CardNota from '../CardNota';
 import "./estilo.css"
 
 class ListaDeNotas extends React.Component {
+
     render(){
         return(
             <ul className="lista">
                 {
-                    Array.of("Trabalho", "Trabalho", "Estudos").map((i, k) =>{
+                    this.props.notas.map((i, k) =>{
                         return(
                             <li 
                                 className="item-da-lista"
