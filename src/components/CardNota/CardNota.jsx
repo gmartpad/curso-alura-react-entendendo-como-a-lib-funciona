@@ -7,13 +7,13 @@ class CardNota extends React.Component {
             <section
                 className="section-da-lista"
             >
-                {/* <header>
+                <header>
                     <h3>
-                        Título
+                        {this.props.titulo}
                     </h3>
-                </header> */}
+                </header>
                 <p>
-                    Escreva sua nota
+                    {this.props.texto}
                 </p>
             </section>
         )

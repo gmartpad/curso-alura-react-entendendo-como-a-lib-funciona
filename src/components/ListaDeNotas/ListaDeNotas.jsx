@@ -10,14 +10,13 @@ class ListaDeNotas extends React.Component {
         return(
             <ul className="lista">
                 {
-                    this.props.notas.map((i, k) =>{
+                    this.props.notas.map((nota, k) =>{
                         return(
                             <li 
                                 className="item-da-lista"
                                 key={k}
                             >
-                                <h2>{i}</h2>
-                                <CardNota/>
+                                <CardNota titulo={nota.titulo} texto={nota.texto}/>
                             </li>
                         )
                     })
